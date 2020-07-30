@@ -9,7 +9,7 @@ Simple helper for `Deno` to convert `Date` format to string. Possibility to use 
 Format Date to string
 
 ```ts
-import { dateToString } from 'https://raw.githubusercontent.com/Uzumachi02/date-format-deno/master/mod.ts'
+import { dateToString } from "https://raw.githubusercontent.com/Uzumachi02/date-format-deno/master/mod.ts"
 
 // use current date
 dateToString("dd-MM-yyyy"); // return : "06-07-2020"
@@ -48,7 +48,7 @@ Register new format or redefine standard formats
 import {
   dateToString,
   registerFormat,
-} from 'https://raw.githubusercontent.com/Uzumachi02/date-format-deno/master/mod.ts';
+} from "https://raw.githubusercontent.com/Uzumachi02/date-format-deno/master/mod.ts";
 
 // new format
 registerFormat({ myFormat: "yyyy/MM/dd hh-mm-ss" });
@@ -63,7 +63,7 @@ registerFormat({ default: "hh:mm:ss dd.MM.yyyy", time: "hh:mm" });
 
 const date = new Date("2020-12-11T10:09:54.321");
 dateToString(date);         // return : "10:09:54 11.12.2020"
-dateToString('TIME', date); // return : "09:54"
+dateToString("TIME", date); // return : "09:54"
 ...
 ```
 
@@ -75,7 +75,7 @@ Gets a `Date` object that is set to the current date and time on this computer, 
 import {
   dateToString,
   utcDate,
-} from 'https://raw.githubusercontent.com/Uzumachi02/date-format-deno/master/mod.ts';
+} from "https://raw.githubusercontent.com/Uzumachi02/date-format-deno/master/mod.ts";
 
 const nowDate = new Date();
 const utcNowDate = utcDate();
@@ -97,7 +97,7 @@ dateToString(utcNowDate); // return : "2020-12-11 07:09:54.321"
 Convert timezoneOffset number to GMT string
 
 ```ts
-import { getGMTOffset } from 'https://raw.githubusercontent.com/Uzumachi02/date-format-deno/master/mod.ts';
+import { getGMTOffset } from "https://raw.githubusercontent.com/Uzumachi02/date-format-deno/master/mod.ts";
 
 const nowDate = new Date();
 
