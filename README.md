@@ -1,5 +1,7 @@
 # date-format-deno
 
+[![date-format-deno ci](https://github.com/uzumachi02/date-format-deno/workflows/ci/badge.svg)](https://github.com/uzumachi02/date-format-deno)
+
 Simple helper for `Deno` to convert `Date` format to string. Possibility to use predefined or custom formats.
 
 ## Usage
